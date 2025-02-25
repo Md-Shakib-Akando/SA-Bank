@@ -34,35 +34,35 @@
             <p class="mb-6 text-lg text-[#08080880]">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
         </div>
         
-        <div class="cards grid grid-cols-3 gap-2 px-6 ">
-            <div class="  p-4 border-2 border-[#08080880] rounded-xl text-center ">
+        <div  class="cards grid grid-cols-3 gap-2 px-6 " >
+            <div id="Add-money-box" class="  p-4 border-2 border-[#08080880] rounded-xl text-center hover:bg-[#3e905680] " >
                 <img class="mx-auto w-13 mb-2" src="assests/wallet 1.png" alt="">
                 <p>Add Money</p>
             </div>
 
-            <div class="  p-4 border-2 border-[#08080880] rounded-xl text-center ">
+            <div id="cashout-box" class="  p-4 border-2 border-[#08080880] rounded-xl text-center hover:bg-[#3e905680] " >
                 <img class="mx-auto w-13 mb-2" src="assests/send 1.png" alt="">
                 <p>Cashout</p>
             </div>
 
-            <div class="  p-4 border-2 border-[#08080880] rounded-xl text-center ">
+            <div class="  p-4 border-2 border-[#08080880] rounded-xl text-center hover:bg-[#3e905680] ">
                 <img class="mx-auto w-13 mb-2" src="assests/money 1.png" alt="">
                 <p>TransferMoney</p>
             </div>
 
-            <div class="  p-4 border-2 border-[#08080880] rounded-xl text-center ">
+            <div class="  p-4 border-2 border-[#08080880] rounded-xl text-center hover:bg-[#3e905680] ">
                 <img class="mx-auto w-13 mb-2" src="assests/financial 1.png" alt="">
                 <p>Get Bonus</p>
             </div>
 
 
-            <div class="  p-4 border-2 border-[#08080880] rounded-xl text-center ">
+            <div class="  p-4 border-2 border-[#08080880] rounded-xl text-center hover:bg-[#3e905680] ">
                 <img class="mx-auto w-13 mb-2" src="assests/purse 1.png" alt="">
                 <p>Pay Bill</p>
             </div>
 
 
-            <div class="  p-4 border-2 border-[#08080880] rounded-xl text-center ">
+            <div class="  p-4 border-2 border-[#08080880] rounded-xl text-center hover:bg-[#3e905680] ">
                 <img class="mx-auto w-13 mb-2" src="assests/Group (1).png" alt="">
                 <p>Transactions</p>
             </div>
@@ -70,9 +70,9 @@
 
         </div>
 
+<!-- Add money -->
 
-
-        <div class=" ">
+        <div id="Add-Money" >
             <h1 class="mt-7 mb-4 font-semibold tex-2xl pl-6">Add Money</h1>
             <div class="hero-content flex-col lg:flex-row-reverse">
               
@@ -113,11 +113,50 @@
             </div>
           </div>
 
-    </section>
-    
 
+
+          <!-- cashout -->
+
+          <div id="cashOut"  >
+            <h1 class="mt-7 mb-4 font-semibold tex-2xl pl-6">Cash Out</h1>
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              
+              <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                <form class="card-body">
+                    
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Agent Number</span>
+                    </label>
+                    <input id="Acount-Number" type="number" placeholder="Enter 11 digit account number" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input id="Add-Amount" type="text"  placeholder="Enter amount to withdraw" class="input input-bordered" required />
+                    
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin Number</span>
+                    </label>
+                    <input id="pin" type="text"  placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                    
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="Cashout-btn" class="btn btn-primary">Withdraw Money</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+         
 
 
     <script src="./script/main.js"></script>
+    <script src="./script/toggle.js"></script>
+    
 </body>
 </html>
